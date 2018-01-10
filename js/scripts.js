@@ -12,5 +12,5 @@ $(document).ready(function() {
   //   $("span#description").text(description);
   //   $("span#date").text(date);
   //   $("span#time").text(time);
-  });
+  // });
 });
