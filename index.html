@@ -8,6 +8,26 @@
     <title>Appointments</title>
   </head>
   <body>
+
+    <div class="modal" id="confirmation" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Confirmation.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Your booking has been received.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     <div class="container">
       <h3>Make appointment</h3>
       <form id="appt">
@@ -27,15 +47,8 @@
           <label for="time">Time:</label>
           <input id="time" class="form-control" type="time">
         </div>
-        <button type="submit" class="btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmation">Submit</button>
       </form>
-
-      <div id="modal">
-        <span id="name"></span><br>
-        <span id="description"></span><br>
-        <span id="date"></span><br>
-        <span id="time"></span><br>
-      </div>
 
 
     </div>
